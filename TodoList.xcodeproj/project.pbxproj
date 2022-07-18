@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2362240A2885D35700D5619D /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236224082885D35700D5619D /* Activity+CoreDataClass.swift */; };
+		2362240D2885D35700D5619D /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236224092885D35700D5619D /* Activity+CoreDataProperties.swift */; };
 		CDC2643F2885CD8800C76440 /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2643E2885CD8800C76440 /* TodoListApp.swift */; };
 		CDC264412885CD8800C76440 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC264402885CD8800C76440 /* ContentView.swift */; };
 		CDC264432885CD8B00C76440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC264422885CD8B00C76440 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		236224082885D35700D5619D /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		236224092885D35700D5619D /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CDC2643B2885CD8800C76440 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC2643E2885CD8800C76440 /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
 		CDC264402885CD8800C76440 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 		CDC2643D2885CD8800C76440 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				236224082885D35700D5619D /* Activity+CoreDataClass.swift */,
+				236224092885D35700D5619D /* Activity+CoreDataProperties.swift */,
 				CDC2643E2885CD8800C76440 /* TodoListApp.swift */,
 				CDC264402885CD8800C76440 /* ContentView.swift */,
 				CDC264422885CD8B00C76440 /* Assets.xcassets */,
@@ -264,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC264482885CD8B00C76440 /* Persistence.swift in Sources */,
+				2362240A2885D35700D5619D /* Activity+CoreDataClass.swift in Sources */,
+				2362240D2885D35700D5619D /* Activity+CoreDataProperties.swift in Sources */,
 				CDC264412885CD8800C76440 /* ContentView.swift in Sources */,
 				CDC2643F2885CD8800C76440 /* TodoListApp.swift in Sources */,
 				CDC2644B2885CD8B00C76440 /* TodoList.xcdatamodeld in Sources */,
@@ -442,7 +450,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -471,7 +479,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

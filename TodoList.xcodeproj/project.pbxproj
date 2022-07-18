@@ -8,13 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2362240A2885D35700D5619D /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236224082885D35700D5619D /* Activity+CoreDataClass.swift */; };
-		2362240B2885D35700D5619D /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236224082885D35700D5619D /* Activity+CoreDataClass.swift */; };
-		2362240C2885D35700D5619D /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236224082885D35700D5619D /* Activity+CoreDataClass.swift */; };
 		2362240D2885D35700D5619D /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236224092885D35700D5619D /* Activity+CoreDataProperties.swift */; };
-		2362240E2885D35700D5619D /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236224092885D35700D5619D /* Activity+CoreDataProperties.swift */; };
-		2362240F2885D35700D5619D /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236224092885D35700D5619D /* Activity+CoreDataProperties.swift */; };
-		236224102885DCDD00D5619D /* TodoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC264542885CD8B00C76440 /* TodoListTests.swift */; };
-		236224112885DCDE00D5619D /* TodoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC264542885CD8B00C76440 /* TodoListTests.swift */; };
 		CDC2643F2885CD8800C76440 /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2643E2885CD8800C76440 /* TodoListApp.swift */; };
 		CDC264412885CD8800C76440 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC264402885CD8800C76440 /* ContentView.swift */; };
 		CDC264432885CD8B00C76440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC264422885CD8B00C76440 /* Assets.xcassets */; };
@@ -88,8 +82,6 @@
 		CDC264322885CD8800C76440 = {
 			isa = PBXGroup;
 			children = (
-				236224082885D35700D5619D /* Activity+CoreDataClass.swift */,
-				236224092885D35700D5619D /* Activity+CoreDataProperties.swift */,
 				CDC2643D2885CD8800C76440 /* TodoList */,
 				CDC264532885CD8B00C76440 /* TodoListTests */,
 				CDC2645D2885CD8B00C76440 /* TodoListUITests */,
@@ -110,6 +102,8 @@
 		CDC2643D2885CD8800C76440 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				236224082885D35700D5619D /* Activity+CoreDataClass.swift */,
+				236224092885D35700D5619D /* Activity+CoreDataProperties.swift */,
 				CDC2643E2885CD8800C76440 /* TodoListApp.swift */,
 				CDC264402885CD8800C76440 /* ContentView.swift */,
 				CDC264422885CD8B00C76440 /* Assets.xcassets */,
@@ -279,7 +273,6 @@
 				2362240A2885D35700D5619D /* Activity+CoreDataClass.swift in Sources */,
 				2362240D2885D35700D5619D /* Activity+CoreDataProperties.swift in Sources */,
 				CDC264412885CD8800C76440 /* ContentView.swift in Sources */,
-				236224102885DCDD00D5619D /* TodoListTests.swift in Sources */,
 				CDC2643F2885CD8800C76440 /* TodoListApp.swift in Sources */,
 				CDC2644B2885CD8B00C76440 /* TodoList.xcdatamodeld in Sources */,
 			);
@@ -289,9 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2362240B2885D35700D5619D /* Activity+CoreDataClass.swift in Sources */,
 				CDC264552885CD8B00C76440 /* TodoListTests.swift in Sources */,
-				2362240E2885D35700D5619D /* Activity+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,10 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2362240F2885D35700D5619D /* Activity+CoreDataProperties.swift in Sources */,
 				CDC264612885CD8B00C76440 /* TodoListUITestsLaunchTests.swift in Sources */,
-				236224112885DCDE00D5619D /* TodoListTests.swift in Sources */,
-				2362240C2885D35700D5619D /* Activity+CoreDataClass.swift in Sources */,
 				CDC2645F2885CD8B00C76440 /* TodoListUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

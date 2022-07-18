@@ -26,20 +26,20 @@ class TodoListTests: XCTestCase {
     }
     
     func testFetchActivities() throws {
-        let persistenceController = PersistenceController.temp
+        let persistenceController = PersistenceController(inMemory: true)
         let _ = persistenceController.createActivity(name: "Activity 1")
         let activities = persistenceController.fetchActivities()
         XCTAssertEqual(activities.count, 1)
     }
     
     func testCreateActivity() throws {
-        let persistenceController = PersistenceController.temp
+        let persistenceController = PersistenceController(inMemory: true)
         let activity = persistenceController.createActivity(name: "New Activity")
         XCTAssertEqual(activity.name, persistenceController.fetchActivities().first!.name)
     }
     
     func testDeleteActivity() throws {
-        let persistenceController = PersistenceController.temp
+        let persistenceController = PersistenceController(inMemory: true)
         let activity = persistenceController.createActivity(name: "Activity Delete")
         XCTAssertEqual(persistenceController.fetchActivities().count, 1)
         persistenceController.delete(object: activity)

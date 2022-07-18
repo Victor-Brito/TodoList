@@ -9,7 +9,7 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    var items = PersistenceController.shared.fetchActivities()
+    @State var items = PersistenceController.shared.fetchActivities()
     var body: some View {
         NavigationView {
             List {
@@ -39,12 +39,16 @@ struct ContentView: View {
     private func addItem() {
         withAnimation {
             let _ = PersistenceController.shared.createActivity(name: "Activity")
+            items = PersistenceController.shared.fetchActivities()
         }
     }
 
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
-            
+            offsets.map { items[$0] }.forEach { activity in
+                PersistenceController.shared.delete(object: activity)
+                items = PersistenceController.shared.fetchActivities()
+            }
         }
     }
 }

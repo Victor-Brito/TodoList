@@ -61,6 +61,7 @@ class PersistenceController {
     
     func delete(object: NSManagedObject) {
         container.viewContext.delete(object)
+        save()
     }
     
 }
